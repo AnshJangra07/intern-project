@@ -196,7 +196,7 @@ let scrollPosition = 0;
 //   window.scrollTo(0, scrollPosition);
 // }
 
-function viewStory() {
+function viewStory1() {
   // Save the current scroll position
   scrollPosition = window.scrollY;
 
@@ -206,8 +206,182 @@ function viewStory() {
   document.querySelector("#header").classList.add("hidden");
   document.querySelector("#scroll").classList.add("hidden");
   document.querySelector(".story1").classList.remove("hidden");
+  document.querySelector(".story2").classList.add("hidden");
+  document.querySelector(".story3").classList.add("hidden");
+  document.querySelector(".story4").classList.add("hidden");
+  document.querySelector(".donation").classList.add("hidden");
+  document.querySelector(".learn").classList.add("hidden");
+  document.querySelector(".abouttoggle").classList.add("hidden");
+  document.querySelector(".fooddon").classList.add("hidden");
+
+
 }
 
+function viewStory2() {
+  // Save the current scroll position
+  scrollPosition = window.scrollY;
+
+  // Hide homepage and show story page
+  document.querySelector("main").classList.add("hidden");
+  document.querySelector("#foot").classList.add("hidden");
+  document.querySelector("#header").classList.add("hidden");
+  document.querySelector("#scroll").classList.add("hidden");
+  document.querySelector(".story1").classList.add("hidden");
+  document.querySelector(".story2").classList.remove("hidden");
+  document.querySelector(".story3").classList.add("hidden");
+  document.querySelector(".story4").classList.add("hidden");
+  document.querySelector(".donation").classList.add("hidden");
+  document.querySelector(".learn").classList.add("hidden");
+  document.querySelector(".abouttoggle").classList.add("hidden");
+  document.querySelector(".fooddon").classList.add("hidden");
+
+
+
+}
+
+function viewStory3() {
+  // Save the current scroll position
+  scrollPosition = window.scrollY;
+
+  // Hide homepage and show story page
+  document.querySelector("main").classList.add("hidden");
+  document.querySelector("#foot").classList.add("hidden");
+  document.querySelector("#header").classList.add("hidden");
+  document.querySelector("#scroll").classList.add("hidden");
+  document.querySelector(".story1").classList.add("hidden");
+  document.querySelector(".story2").classList.add("hidden");
+  document.querySelector(".story3").classList.remove("hidden");
+  document.querySelector(".story4").classList.add("hidden");
+  document.querySelector(".donation").classList.add("hidden");
+  document.querySelector(".learn").classList.add("hidden");
+  document.querySelector(".abouttoggle").classList.add("hidden");
+  document.querySelector(".fooddon").classList.add("hidden");
+
+
+}
+
+function viewStory4() {
+  // Save the current scroll position
+  scrollPosition = window.scrollY;
+
+  // Hide homepage and show story page
+  document.querySelector("main").classList.add("hidden");
+  document.querySelector("#foot").classList.add("hidden");
+  document.querySelector("#header").classList.add("hidden");
+  document.querySelector("#scroll").classList.add("hidden");
+  document.querySelector(".story1").classList.add("hidden");
+  document.querySelector(".story2").classList.add("hidden");
+  document.querySelector(".story3").classList.add("hidden");
+  document.querySelector(".story4").classList.remove("hidden");
+  document.querySelector(".donation").classList.add("hidden");
+  document.querySelector(".learn").classList.add("hidden");
+  document.querySelector(".abouttoggle").classList.add("hidden");
+  document.querySelector(".fooddon").classList.add("hidden");
+
+
+
+}
+
+
+function viewDonation() {
+  // Save the current scroll position
+  scrollPosition = window.scrollY;
+
+  // Hide homepage and show story page
+  document.querySelector("main").classList.add("hidden");
+  document.querySelector("#foot").classList.add("hidden");
+  document.querySelector("#header").classList.add("hidden");
+  document.querySelector("#scroll").classList.add("hidden");
+  document.querySelector(".story1").classList.add("hidden");
+  document.querySelector(".story2").classList.add("hidden");
+  document.querySelector(".story3").classList.add("hidden");
+  document.querySelector(".story4").classList.add("hidden");
+  document.querySelector(".donation").classList.remove("hidden");
+  document.querySelector(".learn").classList.add("hidden");
+  document.querySelector(".abouttoggle").classList.add("hidden");
+  document.querySelector(".fooddon").classList.add("hidden");
+
+
+
+}
+
+document.getElementById('donationForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      amount: document.getElementById('amount').value,
+      address: document.getElementById('address').value,
+      city: document.getElementById('city').value,
+      message: document.getElementById('message').value
+  };
+  console.log(formData);
+  alert('Thank you for your donation!');
+});
+
+
+function viewLearn() {
+  // Save the current scroll position
+  scrollPosition = window.scrollY;
+
+  // Hide homepage and show story page
+  document.querySelector("main").classList.add("hidden");
+  document.querySelector("#foot").classList.add("hidden");
+  document.querySelector("#header").classList.add("hidden");
+  document.querySelector("#scroll").classList.add("hidden");
+  document.querySelector(".story1").classList.add("hidden");
+  document.querySelector(".story2").classList.add("hidden");
+  document.querySelector(".story3").classList.add("hidden");
+  document.querySelector(".story4").classList.add("hidden");
+  document.querySelector(".donation").classList.add("hidden");
+  document.querySelector(".learn").classList.remove("hidden");
+  document.querySelector(".abouttoggle").classList.add("hidden");
+  document.querySelector(".fooddon").classList.add("hidden");
+
+
+}
+
+function viewAbout() {
+  // Save the current scroll position
+  scrollPosition = window.scrollY;
+
+  // Hide homepage and show story page
+  document.querySelector("main").classList.add("hidden");
+  document.querySelector("#foot").classList.add("hidden");
+  document.querySelector("#header").classList.add("hidden");
+  document.querySelector("#scroll").classList.add("hidden");
+  document.querySelector(".story1").classList.add("hidden");
+  document.querySelector(".story2").classList.add("hidden");
+  document.querySelector(".story3").classList.add("hidden");
+  document.querySelector(".story4").classList.add("hidden");
+  document.querySelector(".donation").classList.add("hidden");
+  document.querySelector(".learn").classList.add("hidden");
+  document.querySelector(".abouttoggle").classList.remove("hidden");
+  document.querySelector(".fooddon").classList.add("hidden");
+
+  
+}
+function viewFood() {
+  // Save the current scroll position
+  scrollPosition = window.scrollY;
+
+  // Hide homepage and show story page
+  document.querySelector("main").classList.add("hidden");
+  document.querySelector("#foot").classList.add("hidden");
+  document.querySelector("#header").classList.add("hidden");
+  document.querySelector("#scroll").classList.add("hidden");
+  document.querySelector(".story1").classList.add("hidden");
+  document.querySelector(".story2").classList.add("hidden");
+  document.querySelector(".story3").classList.add("hidden");
+  document.querySelector(".story4").classList.add("hidden");
+  document.querySelector(".donation").classList.add("hidden");
+  document.querySelector(".learn").classList.add("hidden");
+  document.querySelector(".abouttoggle").classList.add("hidden");
+  document.querySelector(".fooddon").classList.remove("hidden");
+  
+}
+// -----------------------------------------------------
 
 function backToHome() {
   // Hide story page and show homepage
@@ -216,6 +390,15 @@ function backToHome() {
   document.querySelector("#header").classList.remove("hidden");
   document.querySelector("#scroll").classList.remove("hidden");
   document.querySelector(".story1").classList.add("hidden");
+  document.querySelector(".story2").classList.add("hidden");
+  document.querySelector(".story3").classList.add("hidden");
+  document.querySelector(".story4").classList.add("hidden");
+  document.querySelector(".donation").classList.add("hidden");
+  document.querySelector(".learn").classList.add("hidden");
+  document.querySelector(".abouttoggle").classList.add("hidden");
+  document.querySelector(".fooddon").classList.add("hidden");
+
+
 
   // Restore the scroll position
   window.scrollTo(0, scrollPosition);

@@ -54,7 +54,7 @@
          </div>
          <div class="nav2">
             <ul>
-               <li>Donate</li>
+               <li onclick="viewDonation()">Donate</li>
                <li href="#Contact">Contact</li>
                <li>Log in</li>
             </ul>
@@ -121,7 +121,7 @@
          <p class="slide-in">As long as poverty, injustice and gross inequality exist in our world, none of us can truly
             rest.</p>
       </div>
-      
+
       <div class="about" id="about">
          <div class="about-title">
             <h1>About</h1>
@@ -135,7 +135,7 @@
                   and ensuring equitable access to resources and opportunities for all. A world where every individual
                   has the means to lead a dignified life, free from poverty and hunger, and empowered to achieve their
                   fullest potential."</p>
-               <div class="aboutInner-more">
+               <div onclick="viewAbout()" class="aboutInner-more">
                   Learn More
                </div>
             </div>
@@ -178,7 +178,7 @@
                <h1>Global hunger crisis in 2023</h1>
                <p>Nearly one in ten people around the world go to bed hungry each night, a crisis driven largely by
                   conflict, climate change, and chronic inequality.</p>
-               <button>Learn more</button>
+               <button onclick="viewLearn()">Learn more</button>
             </div>
             <div class="statistics-graph">
                <img src="/Pictures/graph.png" alt="Statistics">
@@ -199,7 +199,7 @@
                <h2>Food Donations</h2>
                <p>Contribute to local food banks and shelters. Donating non-perishable items or organizing food drives
                   can provide immediate relief to those in need.</p>
-               <button>Learn More!</button>
+               <button onclick="viewFood()">Learn More!</button>
             </div>
 
             <div class="card2 card">
@@ -215,7 +215,7 @@
                <h2>Support Charities</h2>
                <p>Donate to organizations that focus on hunger and poverty alleviation. choose charities to ensure your
                   contributions are used effectively.</p>
-               <button>Donate Today</button>
+               <button onclick="viewDonation()">Donate Today</button>
             </div>
          </div>
       </div>
@@ -225,7 +225,7 @@
          <h1>Success Stories</h1>
 
          <div class="block1 block">
-            <div class="box1 box">
+            <div onclick="viewStory1()" class="box1 box">
                <div class="box-pic">
                   <img src="/Pictures/roberta.jpg" alt="" srcset="">
                </div>
@@ -235,7 +235,7 @@
                      Thanksgiving. She knew the food bank would be there for her. This food helps...</p>
                </div>
             </div>
-            <div onclick="viewStory()" class="box2 box ">
+            <div onclick="viewStory2()" class="box2 box ">
                <div class="box-pic">
                   <img src="/Pictures/Christina.jpg" alt="" srcset="">
                </div>
@@ -248,7 +248,7 @@
          </div>
 
          <div class="block2 block">
-            <div class="box1 box">
+            <div onclick="viewStory3()" class="box1 box">
                <div class="box-pic">
                   <img src="/Pictures/tony.png" alt="" srcset="">
                </div>
@@ -259,7 +259,7 @@
                   </p>
                </div>
             </div>
-            <div class="box2 box">
+            <div onclick="viewStory4()" class="box2 box">
                <div class="box-pic">
                   <img src="/Pictures/alma.jpg" alt="" srcset="">
                </div>
@@ -374,9 +374,68 @@
 
    <!-- ---------------------------------------------------------------------------------- -->
 
-   <!--                                          STORY 1                                   -->
+   <!-- -----------------------------------STORY 1----------------------------------------  -->
 
    <div class="story1 hidden">
+      <div onclick="backToHome()" href='#story' class="back">
+         <img src="/Pictures/left-arrow.png" alt="">
+      </div>
+      <heade class="heade">
+         <div class="header-containe">
+            <h1>Roberta's Story</h1>
+         </div>
+      </heade>
+      <mai class="mai">
+         <sectio class="stor">
+            <div class="story-img-containe">
+               <img src="/Pictures/roberta.jpg" alt="Roberta" class="story-im">
+            </div>
+            <div class="story-conten">
+               <p><strong>Waterloo, Iowa</strong></p>
+               <p>As Roberta pulled up to the holiday food distribution at Northeast Iowa Food Bank the Monday before
+                  Thanksgiving, her 9-year-old son Elijah was sitting in the back seat, a computer on his lap, doing
+                  schoolwork. Meanwhile, her daughter, the bubbly, rambunctious 4-year-old Eliona, just wanted to charm
+                  the volunteers.</p>
+               <p>“She loves being the center of attention,” Roberta laughed as Eliona popped out of the car, giggling
+                  and jumping around. Roberta has a career in home healthcare but needed a little extra help this year
+                  affording food for Thanksgiving. She knew the food bank would be there for her.</p>
+               <p>“This is going to help a lot,” she said as volunteers loaded bags of holiday food – including ham and
+                  sides – into her trunk. “We’ll have this for the holiday, and then have leftovers for a while too.”
+                  The food helps Roberta make the day special for her family, but she’s focused on more than that.</p>
+               <p>“It would be a normal day without this food,” she said. “I’m grateful for the food and I’m just really
+                  thankful for all the blessings we have.”</p>
+            </div>
+         </sectio>
+      </mai>
+
+
+      <div class="credit">
+         <svg fill="#ffffff" height="20px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 350" xml:space="preserve" stroke="#ffffff">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+               <g>
+                  <path
+                     d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587 C104.535,132.855,136.084,171.173,175,171.173z">
+                  </path>
+                  <path d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z"></path>
+                  <path d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z"></path>
+                  <path
+                     d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761 s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131 c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496 c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z">
+                  </path>
+               </g>
+            </g>
+         </svg>
+         <p>Team ~ " Digital Destroyer "</p>
+      </div>
+   </div>
+
+
+
+   <!-- -----------------------------------STORY 2----------------------------------------  -->
+
+   <div class="story2 hidden">
       <div onclick="backToHome()" href='#story' class="back">
          <img src="/Pictures/left-arrow.png" alt="">
       </div>
@@ -431,6 +490,154 @@
             </div>
          </sectio>
       </mai>
+
+
+      <div class="credit">
+         <svg fill="#ffffff" height="20px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 350" xml:space="preserve" stroke="#ffffff">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+               <g>
+                  <path
+                     d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587 C104.535,132.855,136.084,171.173,175,171.173z">
+                  </path>
+                  <path d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z"></path>
+                  <path d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z"></path>
+                  <path
+                     d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761 s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131 c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496 c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z">
+                  </path>
+               </g>
+            </g>
+         </svg>
+         <p>Team ~ " Digital Destroyer "</p>
+      </div>
+   </div>
+
+   <!-- -----------------------------------STORY 3----------------------------------------  -->
+
+   <div class="story3 hidden">
+      <div onclick="backToHome()" href='#story' class="back">
+         <img src="/Pictures/left-arrow.png" alt="">
+      </div>
+      <heade class="heade">
+         <div class="header-containe">
+            <h1>Tony's Story</h1>
+         </div>
+      </heade>
+      <mai class="mai">
+         <sectio class="stor">
+            <div class="story-img-containe">
+               <img src="/Pictures/tony.png" alt="Roberta" class="story-im">
+            </div>
+            <div class="story-conten">
+               <p><strong>Wai'anae , Hawaii</strong></p>
+               <p> As the COVID pandemic reached Hawaii in spring 2020, local farmers were hit hard. With many on very
+                  slim margins, the pandemic made operating small family farms incredibly challenging to sustain.</p>
+
+               <p>“As business slowed down, we asked ourselves, ‘How are we going to deal with it? Do we still keep
+                  planting?’ It all happened so suddenly, but we knew people still needed food,” said Tony Wong Cam of
+                  Huang’s Green Leaf Products – a farm in Wai’anae, Hawaii.</p>
+
+               <p>But the farm persevered – thanks to a partnership with the Hawaii Foodbank.</p>
+
+               <p>The Hawaii Foodbank is a food bank that provides food to families in need.“Thanks to Hawaii Foodbank,
+                  we kept planting, and we were able to keep our 35 employees working,” said company matriarch Fanny
+                  Gan, Tony’s mother. “For me, I really rely on the food bank, and I believe other farmers are, too.”
+               </p>
+
+               <p>In 2019, the food bank purchased 21,000 pounds of pak choy and kai choy from Huang’s Green Leaf
+                  Products.The food bank committed to purchasing $750,000 in local agricultural products for its food
+                  programs – including more than 21,000 pounds of pak choy and kai choy from Huang’s Green Leaf
+                  Products. And in doing so, the food bank helped preserve the family’s farming legacy, which began on a
+                  two-acre lot in Wai’anae more than 20 years ago.</p>
+
+               <p>“I just needed something to do with the skills my husband had. He’s the one who chose farming,” Fanny
+                  Gan says of their humble start. “After working all those years, I’ve learned little by little, and now
+                  I enjoy it because I know we’re providing food for a lot of people.”</p>
+
+               <p>“When they began, my parents saw a need to provide for me and my siblings. Now, they are providing
+                  food and sustenance for many people,” says Tony.</p>
+
+               <p>While Tony believes creativity and staying relevant are important, he also knows believing in what you
+                  do is what truly brings success. “When COVID-19 hit, our operation of planting remained normal because
+                  we believed. We never stopped believing. And when Hawaii Foodbank wanted product, we were ready,” says
+                  Tony. “The program really supports local farmers, and the extra demand for locally desired vegetables
+                  is something we really appreciate. It has not been easy but hearing how people are receiving our
+                  products makes my mom and dad very happy. They feel like they are giving back.”</p>
+
+               <p>So far, the Hawaii Foodbank has partnered with 19 local farms, ensuring key sources of agriculture
+                  remain sustainable, and fresh, local produce is available to communities facing hunger.</p>
+            </div>
+         </sectio>
+      </mai>
+
+
+      <div class="credit">
+         <svg fill="#ffffff" height="20px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 350" xml:space="preserve" stroke="#ffffff">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+               <g>
+                  <path
+                     d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587 C104.535,132.855,136.084,171.173,175,171.173z">
+                  </path>
+                  <path d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z"></path>
+                  <path d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z"></path>
+                  <path
+                     d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761 s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131 c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496 c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z">
+                  </path>
+               </g>
+            </g>
+         </svg>
+         <p>Team ~ " Digital Destroyer "</p>
+      </div>
+   </div>
+
+
+   <!-- -----------------------------------STORY 4----------------------------------------  -->
+
+   <div class="story4 hidden">
+      <div onclick="backToHome()" href='#story' class="back">
+         <img src="/Pictures/left-arrow.png" alt="">
+      </div>
+      <heade class="heade">
+         <div class="header-containe">
+            <h1>Alma's Story</h1>
+         </div>
+      </heade>
+      <mai class="mai">
+         <sectio class="stor">
+            <div class="story-img-containe">
+               <img src="/Pictures/alma.jpg" alt="Roberta" class="story-im">
+            </div>
+            <div class="story-conten">
+               <p>67-year-old Alma really likes to give and receive hugs. In fact, it might be her favorite thing to do.
+                  And that’s because she’s always looking on the bright side of life.</p>
+
+               <p>“I have a positive attitude always,” she said. “Life is too short. You’ve got to live life to the
+                  fullest.”</p>
+
+               <p>That attitude gives Alma strength, even in the face of a challenging time in her life. She’s taking
+                  care of her daughter, who faces a disability. And, she manages to work four days a week to help make
+                  ends meet.</p>
+
+               <p>“I’ve been a workaholic all my life,” she admits proudly. “Always trying to get more hours, do more.”
+               </p>
+
+               <p>When Thanksgiving arrived this year, Alma didn’t hesitate to reach out for a little extra help. She
+                  visited the Northeast Iowa Food Bank’s holiday food distribution in Waterloo to get ham and other
+                  traditional holiday food</p>
+
+               <p>“This is a blessing,” she said. “We’d make it; we’d scrape by without this. I’d be sure of it. But
+                  this does help.”</p>
+
+            </div>
+         </sectio>
+      </mai>
+
+
       <div class="credit">
          <svg fill="#ffffff" height="20px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 350" xml:space="preserve" stroke="#ffffff">
@@ -456,6 +663,248 @@
 
 
 
+   <!-- ---------------------------------------------------------------------------------------------- -->
+
+   <!-- ------------------------------DONATION------------------------------------------------- -->
+
+   <div class="donation hidden">
+      <div onclick="backToHome()" href='#story' class="back">
+         <img src="/Pictures/left-arrow.png" alt="">
+      </div>
+
+      <mai class="mai">
+
+
+         <section class="donation-form">
+            <h2>Make a Donation</h2>
+            <form id="donationForm">
+               <label for="name">Name</label>
+               <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+               <label for="email">Email</label>
+               <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+               <label for="amount">Donation Amount</label>
+               <input type="number" id="amount" name="amount" placeholder="enter the amount" required>
+
+               <label for="address">Address</label>
+               <input type="text" id="address" name="address" placeholder="enter your address" required>
+
+               <label for="city">City</label>
+               <input type="text" id="city" name="city" placeholder="enter your city" required>
+
+               <label for="message">Message (optional)</label>
+               <textarea id="message" name="message" placeholder="enter your message"></textarea>
+
+               <button type="submit">Donate Now</button>
+            </form>
+         </section>
+      </mai>
+
+
+      <div class="credit">
+         <svg fill="#ffffff" height="20px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 350" xml:space="preserve" stroke="#ffffff">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+               <g>
+                  <path
+                     d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587 C104.535,132.855,136.084,171.173,175,171.173z">
+                  </path>
+                  <path d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z"></path>
+                  <path d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z"></path>
+                  <path
+                     d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761 s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131 c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496 c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z">
+                  </path>
+               </g>
+            </g>
+         </svg>
+         <p>Team ~ " Digital Destroyer "</p>
+      </div>
+   </div>
+   <!-- ---------------------------------------------------------------------------------------------- -->
+
+   <!-- ------------------------------FOOD DONATION------------------------------------------------- -->
+
+   <div class="learn hidden">
+      <div onclick="backToHome()" href='#story' class="back">
+         <img src="/Pictures/left-arrow.png" alt="">
+      </div>
+      <headerl>
+         <h1>Global Hunger Crisis 2023</h1>
+         <p>Hunger Numbers Stubbornly High for Three Consecutive Years as Global Crises Deepen</p>
+      </headerl>
+      <sectionl class="contentl">
+         <div class="boxl">
+            <div class="medial">
+               <img class="imagel " src="/lovekesh work/image4.png" alt="Global Hunger Index">
+               <p class="textl">The 2023 Global Hunger Index shows that since 2015 little progress has been made in
+                  reducing hunger. The 2023 GHI score for the world is 18.3, considered moderate. This is less than one
+                  point below the world’s 2015 GHI score of 19.1, indicating that progress on reducing hunger has
+                  largely stalled. In contrast, between 2000, 2008, and 2015, the world made significant headway against
+                  hunger. There has been an increase in the prevalence of undernourishment, one of the indicators used
+                  in the calculation of GHI scores, rising from a low of 7.5 percent in 2017 to 9.2 percent in 2022. The
+                  number of undernourished people in the world increased from 572 million to 735 million in this period.
+                  The 2023 GHI scores are based on data from 2018–2022, including the latest data available in this
+                  period for each of the four GHI indicators. Because the vast majority of these data are from 2020 or
+                  later, they can more fully capture the effects of the COVID-19 pandemic than the data in previous GHI
+                  reports.The increase in the number of undernourished people from 572 million to 735 million during
+                  this period further illustrates the deteriorating situation. The 2023 GHI scores, derived from data
+                  spanning 2018 to 2022, incorporate the impacts of the COVID-19 pandemic, which has exacerbated food
+                  insecurity worldwide. This stagnation calls for renewed efforts and strategies to combat hunger and
+                  achieve sustainable food security.</p>
+            </div>
+         </div>
+         <div class="boxl">
+            <div class="medial">
+               <img class="imagel" src="/lovekesh work/image5.png" alt="Hunger Levels by Country">
+               <p class="textl">According to the 2023 Global Hunger Index (GHI) scores and provisional designations,
+                  nine countries are experiencing alarming levels of hunger, while 34 countries are grappling with
+                  serious levels of hunger. Among these, six countries have GHI scores that fall within the alarming
+                  range. These countries are the Central African Republic, Madagascar, Yemen, the Democratic Republic of
+                  the Congo, Lesotho, and Niger.The alarming levels of hunger in these countries highlight the severe
+                  challenges they face in ensuring food security for their populations. Factors contributing to these
+                  high levels of hunger include political instability, conflict, economic downturns, and climatic
+                  shocks, which disrupt food production and access. The situation in these regions underscores the
+                  urgent need for targeted interventions and international support to address the root causes of hunger
+                  and malnutrition. Sustainable solutions such as improving agricultural productivity, enhancing food
+                  distribution systems, and providing emergency food assistance are crucial to alleviating hunger in
+                  these critically affected areas. The GHI scores serve as a stark reminder of the ongoing global
+                  struggle against hunger and the imperative to intensify efforts towards achieving zero hunger by 2030.
+               </p>
+            </div>
+         </div>
+         <div class="boxl">
+            <div class="medial">
+
+               <p class="textl">Conclusion: The crises the world has faced in recent years have undermined progress
+                  toward ending hunger, and the future portends a continuing onslaught of crises for which the world is
+                  not prepared. Underpinning this unfortunate expectation is the acceleration of climate change, which
+                  is likely to generate not only direct, weather-related crises such as droughts, flooding, extreme
+                  storms, and heat but also indirect crises such as pandemics, conflict, and displacement—all of which
+                  can contribute to hunger without adept responses. Given the vast inequality in today’s world, these
+                  burdens will be disproportionately shouldered by those who already suffer the most from hunger,
+                  poverty, conflict, and poor governance.</p>
+            </div>
+         </div>
+      </sectionl>
+
+
+
+      <div class="credit">
+         <svg fill="#ffffff" height="20px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 350" xml:space="preserve" stroke="#ffffff">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+               <g>
+                  <path
+                     d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587 C104.535,132.855,136.084,171.173,175,171.173z">
+                  </path>
+                  <path d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z"></path>
+                  <path d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z"></path>
+                  <path
+                     d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761 s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131 c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496 c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z">
+                  </path>
+               </g>
+            </g>
+         </svg>
+         <p>Team ~ " Digital Destroyer "</p>
+      </div>
+   </div>
+
+   <!-- --------------------------------------------------------------------------------------------- -->
+
+   <!-- --------------------------------About More------------------------------------------- -->
+
+   <div class="abouttoggle hidden">
+      <div onclick="backToHome()" href='#story' class="back">
+         <img src="/Pictures/left-arrow.png" alt="">
+      </div>
+      <headera class="header">
+         <div class="abc">
+            <h1>About Us</h1>
+            <h3>Let's Make Impactful Change , Together</h3>
+         </div>
+      </headera>
+      <div class="container">
+         <section class="intro">
+            <h2>Welcome to Our Organization</h2>
+            <p>We are a community-driven organization committed to making a positive impact. Our initiatives aim to
+               uplift and empower individuals through education, support, and community engagement.</p>
+         </section>
+
+         <section class="mission">
+            <h2>Our Mission</h2>
+            <p>To foster a supportive community where everyone can thrive. We believe in collaboration, compassion,
+               and the power of collective action to bring about meaningful change.</p>
+         </section>
+
+         <section class="vision">
+            <h2>Our Vision</h2>
+            <p>A world where every individual has the opportunity to achieve their fullest potential. We envision a
+               future filled with innovation, inclusivity, and equity for all.</p>
+         </section>
+
+         <section class="values">
+            <h2>Our Values</h2>
+            <ul>
+               <li><strong>Integrity :</strong> Upholding honesty and transparency in all our actions.</li>
+               <li><strong>Compassion :</strong> Empathy and kindness as the foundation of our work.</li>
+               <li><strong>Collaboration :</strong> Working together to create stronger communities.</li>
+               <li><strong>Innovation :</strong> Encouraging new ideas and creative solutions.</li>
+            </ul>
+         </section>
+      </div>
+   </div>
+
+   <!-- ----------------------------------------------------------------------------------------- -->
+
+   <!-- ----------------------------Food -------------------------------------------------------- -->
+   <div class="fooddon hidden">
+      <div onclick="backToHome()" href='#story' class="back">
+         <img src="/Pictures/left-arrow.png" alt="">
+      </div>
+      <div class="ssss">Food Donation</div>
+      <section class="boxesf">
+         <div class="boxf">
+            <img id="imagef" src="/lovekesh work/image7.jpg" alt="charity">
+            <pf class="textf">Food donations play a crucial role in alleviating hunger and supporting vulnerable
+               communities. Each year, millions of people face food insecurity, unsure of where their next meal will
+               come from. Through the generosity of donors, food banks and charitable organizations can provide
+               nutritious meals to those in need. The act of donating food not only helps meet immediate needs but also
+               fosters a sense of community and compassion, bridging the gap between those who have surplus and those
+               who lack.</pf>
+         </div>
+         <div class="boxf">
+            <img class="image1f" src="/lovekesh work/image11.png" alt="pie chart">
+            <pf class="textf" id="text1">A significant portion of donated food comes from individuals, local businesses,
+               and farmers. In fact, a pie chart representing the sources of food donations reveals that donations of
+               dairy products as well as grains make up 25%, while fresh produce contribute 33.3% and rest contribution
+               is done by meat that is 25%. This diverse sourcing ensures a variety of foods are available, from fresh
+               produce to non-perishable items, catering to different dietary needs and preferences. By working
+               together, these contributors create a robust supply chain that supports food banks and shelters across
+               the country.</pf>
+
+         </div>
+         <div class="boxf">
+            <img class="image1f" src="/lovekesh work/image12.png" alt="bar graph">
+            <pf class="textf">Food donations not only provide immediate relief but also contribute to long-term
+               sustainability. By preventing food waste, donors help reduce the environmental impact associated with
+               excess food production. Another graph shows the breakdown of how food donations are utilized: 50% goes
+               directly to feeding programs, 30% is stored for emergency reserves, and 20% supports educational and
+               community initiatives. These initiatives include nutrition education and cooking classes, empowering
+               individuals and families to make healthier food choices and reduce their reliance on emergency food aid.
+            </pf>
+         </div>
+      </section>
+   </div>
+
+
+
+   
+<!-- ---------------------------------------------------------- -->
    <script src="script.js"></script>
 </body>
 

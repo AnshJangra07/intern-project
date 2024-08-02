@@ -186,6 +186,20 @@ nav li:hover {
   height: 766px;
   position: relative;
   width: 100vw;
+  animation: img;
+  animation-timeline: view();
+  animation-range: exit ;
+}
+
+
+@keyframes img {
+  0% {
+    opacity: 1;
+  }
+ 90%, 100% {
+    opacity: 0;
+    scale: 1.7;
+  }
 }
 
 .hero .hero-title {
@@ -387,6 +401,10 @@ nav li:hover {
   margin-top: 100px;
   font-size: 3.2rem;
   color: rgb(12, 235, 235);
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 500px;
 }
 
 .hero-2b {
@@ -395,6 +413,27 @@ nav li:hover {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 500px;
+
+}
+
+@keyframes fade {
+  0% 
+  { 
+    /* position: relative;
+    left: -50%; */
+    scale: 0.7;
+    opacity: 0;
+  }
+  100% {
+    /* position: relative;
+    left: 0; */
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 .hero-2b p {
@@ -404,6 +443,7 @@ nav li:hover {
   line-height: 1.64062756em;
   text-align: center;
 }
+
 
 @media (max-width: 1400px) {
   .hero-2 h1 {
@@ -507,6 +547,15 @@ nav li:hover {
   }
 }
 
+@media (max-width  : 700px) {
+  .slide-in {
+    font-size: 25px;
+    padding: 5px;
+  }
+}
+
+
+
 .about {
   background-color: #0c2b40cc;
   background-size: cover;
@@ -528,6 +577,10 @@ nav li:hover {
   font-size: 5rem;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px #09090978;
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 500px;
 }
 
 .inner-about {
@@ -543,6 +596,10 @@ nav li:hover {
   width: 50vw;
   margin: 80px 100px;
   border: 2px solid black;
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 500px;
 }
 
 .aboutInner-text {
@@ -554,6 +611,10 @@ nav li:hover {
   align-items: center;
   /* margin-right: 20px; */
   /* border: 2px solid black; */
+    animation: fade linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 500px;
 }
 
 .aboutInner-text h1 {
@@ -709,6 +770,10 @@ nav li:hover {
   justify-content: center;
   align-items: center;
   font-size: 3.8vw;
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 500px;
 }
 
 .about2vdo {
@@ -726,6 +791,10 @@ nav li:hover {
 #myVideo {
   min-width: 100%;
   min-height: 100%;
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 500px;
 }
 
 .content {
@@ -858,12 +927,20 @@ nav li:hover {
   font-weight: bold;
   margin: 0 0 20px;
   font-size: 110px;
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 400px;
 }
 
 .statistics-content p {
   line-height: 1.0256410256;
   margin: 0 0 20px;
   font-size: 35px;
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 200px;
 }
 
 .statistics-content button {
@@ -876,6 +953,7 @@ nav li:hover {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
   cursor: pointer;
+  
 }
 
 .statistics-content button:hover {
@@ -1028,6 +1106,24 @@ nav li:hover {
   background-color: #122d39;
   color: white;
 }
+
+.card{
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 400px;
+}
+
+@keyframes fade-in {
+  0% { scale: 0.68;
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
 
 @media (max-width: 1400px) {
   .involved-content {
@@ -1347,6 +1443,51 @@ nav li:hover {
   width: 100%;
 }
 
+
+.box1{
+  animation: left-in linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 200px;
+
+}
+
+@keyframes left-in {
+  0% 
+  { 
+    position: relative;
+    left: -30%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.box2{
+  animation: right-in linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 200px;
+
+}
+@keyframes right-in {
+  0% 
+  { 
+    position: relative;
+    right: -30%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    right: 0;
+    opacity: 1;
+  }
+}
+
+
 .box-pic {
   width: 45%;
   padding: 15px;
@@ -1577,7 +1718,6 @@ footer {
   color: white;
   padding: 10px 20px;
   font-size: 18px;
-  cursor: pointer;
 }
 
 .contact-details {
@@ -1689,9 +1829,10 @@ footer {
 
 .back {
   position: sticky;
-  top: 30px;
+  top: 20px;
   left: 20px;
   position: fixed;
+  z-index: 1000;
   cursor: pointer;
 }
 
@@ -1771,5 +1912,360 @@ footer {
 
   .stor {
     margin: 10px;
+  }
+}
+
+
+
+
+/* ------------------------Donation--------------------------- */
+
+.donation-form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.donation-form:hover {
+  transform: scale(1.05);
+}
+
+.donation-form h2 {
+  color: #00374d;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+label {
+  color: #00374d;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #adaaaa;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 1em;
+  background: #005b79;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background:  #00374d;
+}
+
+
+
+/* -------------------------------------------learn--------------------------------- */
+
+
+.learn {
+  width: 100vw;
+  /* margin: auto; */
+  overflow: hidden;
+  /* padding: 20px; */
+  /* background: #ffffff; */
+  /* border-radius: 15px; */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+headerl {
+  background: #005b79;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 20px;
+}
+
+headerl h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+headerl p {
+  font-size: 1.2em;
+  margin: 5px 0 0;
+}
+
+.contentl {
+  padding: 20px;
+}
+
+.boxl {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #8ec6de69;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  position: relative;
+}
+
+.medial {
+  display: flex;
+  align-items: flex-start;
+}
+
+.imagel {
+  
+  height: 500px;
+  margin-right: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+#imagl{
+  width: 50%;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+.textl {
+  font-size: 1.1em;
+  color: rgb(241, 241, 241);
+}
+
+
+@media (max-width: 768px) {
+  .learn {
+      width: 100vw;
+  }
+
+  .medial {
+      flex-direction: column;
+  }
+
+  .float-image {
+      width: 100%;
+      margin: 0 0 15px 0;
+  }
+}
+
+
+/* -----------------------about------------------------------------ */
+
+.abouttoggle .header {
+  color: white;
+  position: relative;
+  text-align: center; 
+}
+
+.abouttoggle .abc {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/lovekesh\ work/img7.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 50vh;
+  padding: 100px 20px; 
+  color: white;
+  position: relative;
+}
+
+.abouttoggle .abc h1 {
+  font-size: 2.5em; 
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInDown 2s;
+}
+
+.abouttoggle .abc h3 {
+  font-size: 1.2em; 
+  animation: fadeInUp 2s;
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.abouttoggle .container {
+  max-width: 90%; 
+  margin: 20px auto; 
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.abouttoggle .intro, .abouttoggle .mission, .abouttoggle .vision, .abouttoggle .values {
+  margin-bottom: 30px; 
+  padding: 0 20px;
+}
+
+.abouttoggle h2 {
+  color: #354668;
+  font-size: 1.8em; 
+  margin-bottom: 20px;
+}
+.abouttoggle #headd{
+  color:#000000;
+}
+.abouttoggle p {
+  font-size: 1em;
+  line-height: 1.8;
+  margin: 10px 0;
+  color: #354668;
+
+}
+
+.abouttoggle ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.abouttoggle ul li {
+  background: #30a0d8c0;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1em; 
+  line-height: 1.6;
+}
+
+.abouttoggle ul li strong {
+  color: #0f4274;
+}
+
+.additional-contact {
+  background-color: #33404d;
+  color: white;
+  text-align: center;
+  padding: 20px; 
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.additional-contact a {
+  color: #bbdefb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.additional-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .abouttoggle .abc h1 {
+      font-size: 3em; 
+  }
+  .abouttoggle .abc p {
+      font-size: 1.3em;}
+  .abouttoggle .container {
+      max-width: 70% 
+  }
+}
+
+@media (max-width: 1024px) {
+  .abouttoggle .abc h1 {
+      font-size: 3.5em; 
+  }
+  .abouttoggle .abc p {
+      font-size: 1.5em;
+  }
+  .abouttoggle .container {
+      max-width: 80%; 
+  }
+}
+
+
+
+/* <!-- ----------------------------Food -------------------------------------------------------- --> */
+
+
+.fooddon .boxesf {
+  margin: 40px auto;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.fooddon .boxf {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  float: left;
+  width: calc(33.333% - 20px);
+  margin-right: 20px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s;
+}
+/* #image{
+  height: 300px;
+} */
+.fooddon .boxf img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+.fooddon .ssss{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.fooddon .boxf:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+}
+
+.fooddon .boxf:hover img {
+  transform: scale(1.03);
+}
+
+.fooddon .textf {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+  transition: color 0.3s, font-size 0.3s;
+}
+
+@media (max-width: 768px) {
+  .fooddon .boxf {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
   }
 }
