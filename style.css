@@ -181,7 +181,7 @@ nav li:hover {
 }
 
 .hero {
-  background: url(/Pictures/2.png) no-repeat center;
+  background: url(./Pictures/2.png) no-repeat center;
   background-size: cover;
   height: 766px;
   position: relative;
@@ -590,7 +590,7 @@ nav li:hover {
 }
 
 .aboutInner-pic {
-  background: url(/Pictures/9.png) no-repeat center;
+  background: url(./Pictures/9.png) no-repeat center;
   background-size: cover;
   position: relative;
   width: 50vw;
@@ -1705,7 +1705,7 @@ footer {
 }
 .footer-right {
   /* padding: 50px; */
-  background: url(/Pictures/13.png) no-repeat center;
+  background: url(./Pictures/13.png) no-repeat center;
   background-size: cover;
   margin-right: 30px;
 }
@@ -2071,7 +2071,7 @@ headerl p {
 }
 
 .abouttoggle .abc {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/lovekesh\ work/img7.jpg');
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('./picture2/img7.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
